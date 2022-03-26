@@ -1,0 +1,33 @@
+### ĐĂNG KÝ NGƯỜI DÙNG
+POST https://localhost:5001/api/QuanLyNguoiDung/DangKy
+Content-Type: application/json
+
+{
+  "taiKhoan": "01Admin12311",
+  "matKhau": "admin123",
+  "email": "huynhtranbaoquoc1@gmail.com",
+  "soDt": "0989832983",
+  "maNhom": "GP00",
+  "hoTen": "huỳnh trần bảo quốc"
+}
+
+### ĐĂNG NHẬP NGƯỜI DÙNG
+POST https://localhost:5001/api/QuanLyNguoiDung/DangNhap
+Content-Type: application/json
+
+{
+  "taiKhoan": "01Admin12311",
+  "matKhau": "admin123",
+}
+
+### LẤY THÔNG TIN BẢN THÂN USER
+POST https://localhost:5001/api/QuanLyNguoiDung/ThongTinTaiKhoan
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiMDFBZG1pbjEyMzExIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiaHV5bmh0cmFuYmFvcXVvYzFAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjpbIktoYWNoSGFuZyIsImh1eW5odHJhbmJhb3F1b2MxQGdtYWlsLmNvbSIsIkdQMDAiXSwibmJmIjoxNjQ4MzAwMDk2LCJleHAiOjE2NDgzMDM2OTZ9.I8vQ_fKQ-TO-D1iQiNp_cl8QKom8MfJ3y8ydCFm_vQY
+
+{
+  "taiKhoan": "01Admin12311",
+}
+
+### LẤY LIST NGƯỜI DÙNG
+GET https://localhost:5001/api/QuanLyNguoiDung/LayDanhSachNguoiDung?MaNhom=GP00
